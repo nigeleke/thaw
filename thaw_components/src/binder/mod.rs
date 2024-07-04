@@ -34,24 +34,24 @@ impl Copy for FollowerWidth {}
 
 /// # Tracking popup
 ///
-/// ```rust
-/// use crate::components::{Binder, Follower, FollowerPlacement};
-/// use leptos::*;
-///
-/// let div_ref= NodeRef::new();
-/// let show = RwSignal::new(false);
-///
-/// view! {
-///     <Binder target_ref=div_ref>
-///        <div ref=div_ref>
-///            "content"
-///        </div>
-///        <Follower slot show placement=FollowerPlacement::BottomStart>
-///           "content2"
-///        </Follower>
-///     </Binder>
-/// }
-/// ```
+// ```rust
+// use crate::components::{Binder, Follower, FollowerPlacement};
+// use leptos::*;
+//
+// let div_ref= NodeRef::new();
+// let show = RwSignal::new(false);
+//
+// view! {
+//     <Binder target_ref=div_ref>
+//        <div ref=div_ref>
+//            "content"
+//        </div>
+//        <Follower slot show placement=FollowerPlacement::BottomStart>
+//           "content2"
+//        </Follower>
+//     </Binder>
+// }
+// ```
 #[component]
 pub fn Binder<El: ElementDescriptor + Clone + 'static>(
     /// Used to track DOM locations
